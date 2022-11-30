@@ -1,5 +1,8 @@
+const db = require('../database/models');
+
 module.exports = {
   home: (req, res)=>{
-    res.json({status: "sapee loquita!"})
+    db.Actividad.findAll()
+      .then(data => res.json(data))
   }
 }
