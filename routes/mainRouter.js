@@ -11,5 +11,7 @@ router.get('/', function(req, res, next) {
   res.send("Hello World!");
 });
 router.get('/actividades', mainController.list);
+router.post('/agregar-imagen', upload.single('file'), mainController.addImage)
+router.get('/images', mainController.getImages)
 
 module.exports = router;
