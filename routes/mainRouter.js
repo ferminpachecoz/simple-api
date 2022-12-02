@@ -10,6 +10,5 @@ const upload = multer({storage: storage});
 router.get('/', function(req, res, next) {
   res.send("Hello World!");
 });
-router.get('/actividades', mainController.list);
 
 module.exports = router;
