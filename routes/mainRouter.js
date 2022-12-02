@@ -11,6 +11,5 @@ router.get('/', function(req, res, next) {
   res.send("Hello World!");
 });
 router.get('/actividades', mainController.list);
-router.get('/images', mainController.getImages)
 
 module.exports = router;
