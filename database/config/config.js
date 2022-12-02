@@ -2,21 +2,21 @@ module.exports={
   "development": {
     "username": "idea_admin",
     "password": "pacheco2002",
-    "database": "idea_server",
+    "database": "idea_db",
     "host": "179.61.219.130",
     "dialect": "mysql"
   },
   "test": {
     "username": "idea_admin",
     "password": "pacheco2002",
-    "database": "idea_server",
+    "database": "idea_db",
     "host": "179.61.219.130",
     "dialect": "mysql"
   },
   "production": {
     "username": "idea_admin",
     "password": "pacheco2002",
-    "database": "idea_server",
+    "database": "idea_db",
     "host": "179.61.219.130",
     "dialect": "mysql"
   }
