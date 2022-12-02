@@ -5,6 +5,7 @@ let logger = require('morgan');
 let cors = require('cors')
 
 let mainRouter = require('./routes/mainRouter.js');
+let userRouter = require('./routes/userRouter.js')
 
 let app = express();
 
@@ -20,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('/', mainRouter);
+app.use('/users', userRouter)
 
 app.listen(3001, ()=>{
   console.log("servidor corriendo en http://localhost:3001/")
