@@ -8,7 +8,7 @@ const storage = multer.memoryStorage()
 const upload = multer({storage: storage});
 
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname+'/index.html'));
+  res.send("Hola mundo!");
 });
 router.get('/actividades', mainController.list);
 router.post('/actividades', mainController.create);
